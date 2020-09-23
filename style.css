@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"] {
+  border: 1px solid #ffb700;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+input[type="radio"]:checked {
+  background-color: #ffb700;
+  outline: 0;
+}
+input[type="radio"]:focus {
+  outline: 0;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #ffb700;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ffb700;
+  outline: 0;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"] {
+  border: 2px solid#ffb700;
+  max-width: 70vw;
+  height: 25px;
+}
+
+/* 1er */
+.landing {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.main {
+  background: url("./images/Landing.jpg") center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.main::after {
+  content: url("./images/Scroller.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: -4px;
+  pointer-events: all;
+}
+
+/* 2eme */
+
+.rose {
+  height: 85vh;
+  background: url("./images/LandingRose.jpg");
+  background-size: cover;
+}
+.roseFont {
+  color: #de216b;
+}
+
+.margin30px {
+  margin-left: 30px;
+}
+.margin60px {
+  margin-left: 60px;
+}
+.margin15 {
+  margin-bottom: 15%;
+  font-size: 22px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.blocTop {
+  position: relative;
+}
+.blocTextLeft {
+  font-size: 24px;
+  max-width: 500px;
+  margin-left: 30px;
+}
+.imageFemme {
+  position: absolute;
+  height: auto;
+  max-width: 30vw;
+  right: 0;
+  top: 0;
+}
+.blocTextmid {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-size: 22px;
+}
+.blocBottom {
+  font-size: 15px;
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+}
+.backgroundRoseCTA {
+  background-color: #de216b;
+  background: linear-gradient(to right, #f26dc0 50%, #de216b 50%);
+}
+.imageMenuiserie {
+  height: 50vh;
+}
+
+.contentLameRose {
+  display: none;
+}
+
+/* 3eme */
+.orange {
+  height: 85vh;
+  background: url("./images/LandingOrange.png") center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contentLame {
+  display: none;
+  padding-bottom: 25px;
+}
+
+.blocText {
+  max-width: 800px;
+  margin-left: 30px;
+}
+
+.orangeTitle {
+  font-size: 30px;
+  color: #f86c08;
+  max-width: 500px;
+  text-transform: uppercase;
+}
+
+.textPicto {
+  position: relative;
+  background: #ff5e00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 30px;
+}
+.textPicto > h2 {
+  width: 250px;
+}
+.textPicto::after {
+  z-index: 1;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 25px;
+  bottom: -25px;
+  border-color: #f86c08 transparent transparent transparent;
+}
+
+.bgWhite {
+  background-color: white !important;
+}
+.colorOrange {
+  color: #ff5e00;
+}
+.colorBlack {
+  color: black;
+}
+.bgWhite::after {
+  bottom: -45px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.textDroit {
+  width: 100%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  background: #ff7e33;
+}
+.textDroit > p {
+  max-width: 700px;
+}
+.backgroundOrangeCTA {
+  background-color: #f86c08;
+  background: linear-gradient(to right, #ff7e33 50%, #ff5e00 50%);
+}
+.CTA {
+  border: none;
+  position: absolute;
+  color: white;
+  padding: 20px 10px;
+  bottom: 10%;
+  right: 10%;
+  background-color: #000000;
+  transition-duration: 2s;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease-out;
+}
+
+.CTA:hover {
+  background-position: left bottom;
+}
+.flexRow {
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+/*4eme*/
+
+.jaune {
+  height: 85vh;
+  background: url("./images/LandingJaune.png") center;
+  background-size: cover;
+}
+.contentLameJaune {
+  display: none;
+}
+.contentLameJaune > h3 {
+  margin-left: 30px;
+}
+form {
+  margin-left: 30px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.ctaForm {
+  color: #ffffff;
+  border: none;
+  background-color: #ffb700;
+  background: linear-gradient(to right, #ffc430 50%, #ffc430 50%);
+  position: relative;
+  padding: 10px 20px;
+  transition-duration: 2s;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease-out;
+  float: right;
+  margin-right: 10%;
+}
+.ctaForm:hover {
+  background-position: left bottom;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.imgBrand {
+  width: 200px;
+  margin-left: 2vw;
+  margin-top: 20px;
+}
+
+.landingHeader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  font-size: 30;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgBrandFooter {
+  margin: 20px 15vw 20px 20px;
+}
+.oui {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  margin-right: 10vw;
+}
+.non {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 2;
+}
+
+.show {
+  height: 100%;
+  transition-duration: 1s;
+}
+
+/* animation */
+.animated {
+  display: block;
+  animation-name: contentLame;
+  animation-duration: 1s;
+}
+
+@keyframes contentLame {
+  0% {
+    transform: translate(0, -2%);
+  }
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    transform: translate(0);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
